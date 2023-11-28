@@ -22,5 +22,5 @@ try:
     browser.find_element(By.XPATH, "//button[@type='submit']").click()
 
 finally:
-    time.sleep(10)
+    time.sleep(4)
     browser.quit()
