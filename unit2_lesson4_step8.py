@@ -27,5 +27,5 @@ try:
     browser.find_element(By.XPATH, "//button[@id = 'solve']").click()
 
 finally:
-    time.sleep(5)
+    time.sleep(3)
     browser.quit()
