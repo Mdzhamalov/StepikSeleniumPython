@@ -8,9 +8,7 @@ import math
 
 class TestLogin:
 
-    addresses = ["236895", "236896", "236897", "236898", "236899", "236903", "236904", "236905"]
-
-    @pytest.mark.parametrize('endpoint', addresses)
+    @pytest.mark.parametrize('endpoint', ["236895", "236896", "236897", "236898", "236899", "236903", "236904", "236905"])
     def test_login_to_stepik(self, browser, endpoint):
         link = f"https://stepik.org/lesson/{endpoint}/step/1"
         browser.get(link)
